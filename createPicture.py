@@ -51,7 +51,7 @@ def createPicture(pattern, quantity):
         # print(im.getpixel((x, y)))
         
     im.show()
-    im.save("a.png")
+    # im.save("a.png")
 
 # createPicture(['1', '-1', '1', '1', '1', '1'], 1000000)
 # createPicture(['1', '1', '1', '2', '1', '0'], 1000000) #РОООООООМБ
