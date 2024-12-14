@@ -38,14 +38,14 @@ def createPicture(pattern, quantity):
             direction, addx, addy, color = MT[state][direction][CDIRW]
             if color == "1":
                 dr.point((x, y), (0, 0, 0))
-            x += int(addx)
-            y += int(addy)
+            x += int(addx)*2
+            y += int(addy)*2
         else:
             direction, addx, addy, color = MT[state][direction][CDIRB]
             if color == "1":
                 dr.point((x, y), (255, 255, 255))
-            x += int(addx)
-            y += int(addy)
+            x += int(addx)*2
+            y += int(addy)*2
         count += 1
         
         # print(im.getpixel((x, y)))

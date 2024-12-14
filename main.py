@@ -12,8 +12,9 @@ def main():
         I implemented a "Langton's ant" turing machine.
         The result of the work is the display of a picture for the selected ant pattern
         For everything to work, select the pattern according to which the pixels will change, 
-        then the options will be presented and the depth of the cycle, continue? 
-        [press Enter]
+        then the options will be presented and the depth of the cycle.
+        P.S. To make it more interesting, I added obstacles for the ant.
+        [to continue press Enter]
         """)
     
     while True:
@@ -37,9 +38,9 @@ def main():
     print(f"you have chosen a pattern {selected_pattern}, now choose the number of steps for the ant:")
     print("""
         '0' - choose the quantity yourself.
-        '1' - 100
-        '2' - 1000
-        '3' - 10000
+        '1' - 10000
+        '2' - 100000
+        '3' - 1000000
           """)
     while True:
         quantity_of_steps = input()
@@ -48,15 +49,15 @@ def main():
             clear()
             break
         elif quantity_of_steps == "1":
-            quantity_of_steps = 100
+            quantity_of_steps = 10000
             clear()
             break
         elif quantity_of_steps == "2":
-            quantity_of_steps = 1000
+            quantity_of_steps = 100000
             clear()
             break
         elif quantity_of_steps == "3":
-            quantity_of_steps = 10000
+            quantity_of_steps = 1000000
             clear()
             break
         else:
